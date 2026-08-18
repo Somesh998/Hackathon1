@@ -1,0 +1,35 @@
+{
+  "name": "student-tech-recommender-backend",
+  "version": "1.0.0",
+  "description": "Express backend for AI-powered student tech recommendation agent",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "server": "nodemon server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node tests/reelUnderstanding.test.js && node tests/interestInference.test.js && node tests/trapEvaluation.test.js && node tests/recommendationContract.test.js && node tests/endToEndTrap.test.js && node tests/evaluationFramework.test.js",
+    "test:contract": "node tests/recommendationContract.test.js",
+    "test:e2e": "node tests/endToEndTrap.test.js",
+    "test:eval": "node tests/evaluationFramework.test.js",
+    "test:trap": "node tests/trapEvaluation.test.js"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "mongoose",
+    "recommendation-engine"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
